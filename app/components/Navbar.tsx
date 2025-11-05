@@ -2,23 +2,23 @@
 import { type VariantProps } from "class-variance-authority";
 import { Menu } from "lucide-react";
 import { ReactNode } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "@/app/lib/utils";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/components-shadcn/ui/button";
 import {
   Navbar as NavbarComponent,
   NavbarLeft,
   NavbarRight,
   NavbarCenter,
-} from "@/components/ui/navbar";
-import Navigation from "@/components/ui/navigation";
+} from "@/app/components-shadcn/ui/navbar";
+import Navigation from "@/app/components-shadcn/ui/navigation";
 import {
   Sheet,
   SheetContent,
   SheetDescription,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from "@/app/components-shadcn/ui/sheet";
 import Link from "next/link";
 import { motion } from "framer-motion";
 

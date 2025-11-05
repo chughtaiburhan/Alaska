@@ -2,32 +2,27 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
-
-// --- ANIMATION VARIANTS ---
-// Master container variant for the whole section
+ 
 const sectionContainerVariant: Variants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1,  // Delay between the *major* sections (Header, Left Col, Right Col)
+      staggerChildren: 0.1, 
       delayChildren: 0.1,
     },
   },
-};
-
-// Text reveal for headings/paragraphs
+}; 
 const textRevealVariant: Variants = {
   hidden: { y: 30, opacity: 0, filter: 'blur(4px)' },
   show: { y: 0, opacity: 1, filter: 'blur(0px)', transition: { duration: 0.7, ease: [0.43, 0.13, 0.23, 0.96] } },
 };
-
-// Enhanced Card Slide Variant (More bounce/3D effect)
+ 
 const cardSlideVariant: Variants = {
-  hidden: (direction: number) => ({ // direction is a custom prop (1 for right, -1 for left)
+  hidden: (direction: number) => ({  
     opacity: 0,
     x: direction * 100,
-    rotateY: direction * 10, // Slight rotation for 3D feel
+    rotateY: direction * 10,
     scale: 0.9,
   }),
   show: {
@@ -36,15 +31,14 @@ const cardSlideVariant: Variants = {
     rotateY: 0,
     scale: 1,
     transition: {
-      type: "spring", // Use spring for a smoother, bouncier finish
+      type: "spring",
       stiffness: 100,
       damping: 20,
       duration: 0.7,
     },
   },
 };
-
-// New variant for staggering list items
+ 
 const listItemVariant: Variants = {
   hidden: { opacity: 0, y: 10 },
   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },

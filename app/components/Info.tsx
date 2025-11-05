@@ -3,7 +3,7 @@
 import Image from "next/image";
 import FeatureImg from "@/public/featureImg.svg";
 import Icon from "@/app/assets/icon.svg";
-import { cn } from "@/lib/utils";
+import { cn } from "@/app/lib/utils";
 import { motion, Variants, Transition } from "framer-motion";
 
 const listItems = [

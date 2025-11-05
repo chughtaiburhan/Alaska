@@ -3,7 +3,7 @@
 import { ChevronsUpDownIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 import * as React from "react";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Button } from "./button";
 import {
@@ -16,9 +16,10 @@ import {
 export function ModeToggle() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-
-  useEffect(() => {
-    setMounted(true);
+ 
+  useEffect(() => { 
+    const id = setTimeout(() => setMounted(true), 0);
+    return () => clearTimeout(id);
   }, []);
 
   if (!mounted) {
