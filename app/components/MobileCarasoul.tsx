@@ -33,7 +33,7 @@ const MobileCarousel: React.FC<MobileCarouselProps> = ({ submarines }) => {
 
   return (
     <div className="md:hidden relative overflow-hidden">
-      <div className="relative w-full h-96"> {/* Carousel container */}
+      <div className="relative w-full h-96">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -43,7 +43,7 @@ const MobileCarousel: React.FC<MobileCarouselProps> = ({ submarines }) => {
             transition={{ duration: 0.5 }}
             className="absolute inset-0"
           >
-            <Card className="overflow-hidden bg-[#fff8ea] backdrop-blur-sm border-blue-500/30 h-full z-0"> {/* Added z-0 to ensure it's below buttons */}
+            <Card className="overflow-hidden bg-[#fff8ea] backdrop-blur-sm border-blue-500/30 h-full z-0">
               <div className="relative h-56">
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent z-10" />
                 <Image
