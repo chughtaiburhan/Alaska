@@ -21,22 +21,22 @@ const ImgGallery = () => {
        <Image alt='image1' height={500} width={500} src="/images/GalleryImg2s.svg"/>
     </div>
     <div className="col-start-4">
-       <Image alt='image1' height={500} width={500} src="/images/GalleryImg3s.svg"/>
+       <Image alt='image1' height={500} width={500} src="/images/galleryImg3s.svg"/>
     </div>
     <div className="col-start-3 row-start-2">
-       <Image alt='image1' height={500} width={500} src="/images/GalleryImg4s.svg"/>
+       <Image alt='image1' height={500} width={500} src="/images/galleryImg4s.svg"/>
     </div>
     <div className="col-start-4 row-start-2">
-       <Image alt='image1' height={500} width={500} src="/images/GalleryImg5s.svg"/>
+       <Image alt='image1' height={500} width={500} src="/images/galleryImg5s.svg"/>
     </div>
     <div className="col-span-2 row-span-2 row-start-3">
-       <Image alt='image1' height={500} width={500} src="/images/GalleryImg6s.svg"/>
+       <Image alt='image1' height={500} width={500} src="/images/galleryImg6s.svg"/>
     </div>
     <div className="row-span-2 col-start-3 row-start-3">
-       <Image alt='image1' height={500} width={500} src="/images/GalleryImg7s.svg"/>
+       <Image alt='image1' height={500} width={500} src="/images/galleryImg7s.svg"/>
     </div>
     <div className="row-span-2 col-start-4 row-start-3">
-       <Image alt='image1' height={500} width={500} src="/images/GalleryImg8s.svg"/>
+       <Image alt='image1' height={500} width={500} src="/images/galleryImg8s.svg"/>
     </div>
 </div>
     
